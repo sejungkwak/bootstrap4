@@ -9,12 +9,18 @@ body {
 
 /*************** Containers ***************/
 
+.container-fluid {
+    padding: unset;
+}
+
 .callout-container {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    min-height: 40rem;
+    padding-top: 7rem;
     background: url("../images/whiskey-background.jpeg") no-repeat right center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -28,14 +34,44 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, .5);
 }
 
+/*************** Navigation bar ***************/
+
+.nav-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.full-width-alert {
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+    background-color: #eec802;
+    color: #544600;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, .25);
+}
+
+.navbar-brand,
+.nav-link {
+    font-weight: 700;
+}
+
+.navbar-toggler {
+    border: none;
+}
 
 /*************** Block dividers ***************/
 
 .block-divider {
-    margin: 3rem auto;
+    margin: 2.5rem auto;
     border: none;
     width: 5rem;
     height: .3rem;
@@ -57,13 +93,14 @@ body {
 }
 
 .jumbotron-header {
-    font-size: 5vh;
+    font-size: min(8vw, 2.5rem);
     font-family: 'Gravitas One', cursive;
     color: #fff;
 }
 
 .lead {
     margin: 2rem auto;
+    font-size: min(4.5vw, 1.25rem);
     color: #a7a7a7;
 }
 
