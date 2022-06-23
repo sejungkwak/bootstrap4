@@ -9,7 +9,8 @@
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
     <title>Whiskey Drop | Taste a new whiskey every month</title>
 </head>
@@ -49,42 +50,49 @@
             <a href="/login">Sign In / Sign Up</a>
         </div>
     </nav>
-    <article class="container mt-3">
-        <!-- Promotion -->
-        <div class="row d-none d-sm-block">
-            <div class="col-12">
-                <div class="alert alert-warning">
-                    <strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for the price of 6!
-                    <a href="">See here for details!</a>
-                </div>
+
+    <!-- Promotion -->
+    <!-- <div class="row d-none d-sm-block">
+        <div class="col-12">
+            <div class="alert alert-warning">
+                <strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for the price of 6!
+                <a href="">See here for details!</a>
             </div>
         </div>
-        <!-- /. promotion -->
-        <!-- Callout -->
+    </div> -->
+    <!-- /. promotion -->
+
+    <!-- Callout -->
+    <div class="container-fluid callout-container">
+        <div class="opaque-overlay"></div>
         <div class="row">
             <div class="col-12">
                 <section class="callout jumbotron text-center">
-                    <h1>The finest whiskeys delivered to your doorstep.</h1>
+                    <h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep.</h1>
+                    <hr class="block-divider block-divider--whiskey">
                     <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
                         <s class="d-none d-sm-inline">€19.99</s>
                         <span class="d-inline d-sm-none"><br></span>
                         <strong><mark>First one is free!</mark></strong>
                     </p>
-                    <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign
+                    <button class="btn btn-success btn-lg btn--cta btn--whiskey" data-toggle="modal"
+                        data-target="#signUpModal">Sign
                         Up!</button>
-                    <p class="text-muted"><small>You must be over 18 to sign up to our service. Please, drink
+                    <p class="text-muted"><small class="smallprint">You must be over 18 to sign up to our service.
+                            Please, drink
                             responsibly.</small></p>
                 </section>
             </div>
         </div>
-        <!-- /.callout -->
-        <hr>
+    </div>
+    <!-- /.callout -->
 
-        <!-- Quotes -->
+    <!-- Quotes -->
+    <div class="container quotes-container">
         <section class="quotes">
             <div class="row">
                 <div class="col-12 my-5">
-                    <h2 class="text-uppercase">Quotes:</h2>
+                    <h2 class="text-uppercase">Quotes</h2>
                 </div>
             </div>
             <div class="row">
@@ -119,14 +127,15 @@
                 </div>
             </div>
         </section>
-        <!-- /.quotes -->
-        <hr>
+    </div>
+    <!-- /.quotes -->
 
-        <!-- Features -->
+    <!-- Features -->
+    <div class="container features-container">
         <section class="features">
             <div class="row">
                 <div class="col-12 my-5">
-                    <h2 class="text-uppercase">Features:</h2>
+                    <h2 class="text-uppercase">Features</h2>
                 </div>
             </div>
             <div class="row">
@@ -171,9 +180,11 @@
                 </div>
             </div>
         </section>
-        <!-- /.features -->
+    </div>
+    <!-- /.features -->
 
-        <!-- Monthly favorites -->
+    <!-- Monthly favorites -->
+    <div class="container monthly-favorites-container">
         <section>
             <div class="row">
                 <div class="col-12 my-5">
@@ -217,8 +228,8 @@
                 </tbody>
             </table>
         </section>
-        <!-- /.monthly favorites -->
-    </article>
+    </div>
+    <!-- /.monthly favorites -->
 
     <!-- Sign up modal -->
     <div class="modal" tabindex="-1" id="signUpModal">
@@ -236,7 +247,8 @@
                             <label for="exampleInputEmail1">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                anyone
                                 else.</small>
                         </div>
                         <div class="form-group">

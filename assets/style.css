@@ -1,0 +1,96 @@
+:root {
+    --whiskey-color: #bb6100;
+    --whiskey-dark: #9c4800;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*************** Containers ***************/
+
+.callout-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url("../images/whiskey-background.jpeg") no-repeat right center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/*************** Block dividers ***************/
+
+.block-divider {
+    margin: 3rem auto;
+    border: none;
+    width: 5rem;
+    height: .3rem;
+    background-color: #444;
+}
+
+.block-divider--whiskey {
+    background-color: var(--whiskey-color);
+}
+
+.block-divider--short {
+    width: 2.5rem;
+}
+
+/*************** Jumbotron ***************/
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron-header {
+    font-size: 5vh;
+    font-family: 'Gravitas One', cursive;
+    color: #fff;
+}
+
+.lead {
+    margin: 2rem auto;
+    color: #a7a7a7;
+}
+
+.smallprint {
+    font-style: italic;
+    color: #d0d0d0;
+}
+
+/*************** Buttons ***************/
+
+.btn--cta {
+    border: none;
+    border-radius: 1.5rem;
+    padding: .7rem 2.1rem;
+    font-weight: 700;
+}
+
+.btn--whiskey {
+    background-color: var(--whiskey-color);
+    color: #fff;
+}
+
+.btn--whiskey:hover,
+.btn--whiskey:active,
+.btn--whiskey:focus,
+.btn--whiskey:active:focus {
+    background-color: var(--whiskey-dark);
+    border-color: var(--whiskey-dark);
+    color: #fff;
+}
