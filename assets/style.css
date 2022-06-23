@@ -7,6 +7,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+h2,
+h3 {
+    text-align: center;
+}
+
 /*************** Containers ***************/
 
 .container-fluid {
@@ -35,6 +40,18 @@ body {
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, .5);
+}
+
+.quotes-container,
+.features-container,
+.monthly-favorites-container {
+    margin: 3rem auto;
+    padding: 3rem 0;
+}
+
+.features-container {
+    background-color: var(--whiskey-color);
+    color: #fff;
 }
 
 /*************** Navigation bar ***************/
@@ -68,6 +85,33 @@ body {
     border: none;
 }
 
+/*************** Quotes Section ***************/
+
+.blockquote {
+    margin: 0 0 3rem 1rem;
+}
+
+/*************** Features Section ***************/
+
+.fas {
+    margin-bottom: .7rem;
+    font-size: 3rem;
+}
+
+.read-more {
+    text-align: center;
+}
+
+.feature .btn {
+    margin: .5rem auto 1rem;
+    border: none;
+    border-radius: 15px;
+    padding: .6rem 1.2rem;
+    background-color: #fff;
+    font-weight: 700;
+    color: var(--whiskey-color)
+}
+
 /*************** Block dividers ***************/
 
 .block-divider {
@@ -82,7 +126,12 @@ body {
     background-color: var(--whiskey-color);
 }
 
+.block-divider--white {
+    background-color: #fff;
+}
+
 .block-divider--short {
+    margin: 1.5rem auto 3rem;
     width: 2.5rem;
 }
 
